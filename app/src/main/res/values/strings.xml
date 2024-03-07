@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Marvel Cinematic Universe</string>
+    <string name="Sutradara">Sutradara : Joe Russo</string>
+    <string name="Genre">R 13+ | Super hero | Adventure | Action </string>
+    <string name="Duration">Durasi : 2 Jam 23 Menit</string>
+    <string name="intro">Synopsis</string>
+    <string name="Descrip">Ketika musuh yang tak terduga muncul, mengancam keselamatan dan keamanan dunia, Nick Fury, direktur Badan Perdamaian Internasional, dikenal sebagai S.H.I.E.L.D. , membutuhkan tim untuk menyelamatkan dunia dari bencana.</string>
+    <string name="about">About</string>
+    <string name="Movie">About</string>
+
+</resources>

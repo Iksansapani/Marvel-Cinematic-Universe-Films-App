@@ -1,0 +1,110 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.DetailActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/char_bg"
+                android:layout_width="419dp"
+                android:layout_height="234dp"
+                android:src="@drawable/bg_theavenger"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/char_pic"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/sutradara"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/pic_detail" />
+
+            <TextView
+                android:id="@+id/char_synopsis"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/kanit_semibold"
+                android:text="@string/intro"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/char_pic"
+                app:layout_constraintTop_toBottomOf="@+id/btn_share" />
+
+            <TextView
+                android:id="@+id/char_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/kanit_bold"
+                android:text="The Avenger"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/char_pic"
+                app:layout_constraintTop_toBottomOf="@+id/char_bg" />
+
+            <TextView
+                android:id="@+id/char_descrip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/kanit"
+                android:text="@string/Descrip"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/char_synopsis"
+                app:layout_constraintTop_toBottomOf="@+id/char_synopsis" />
+
+            <TextView
+                android:id="@+id/char_genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kanit"
+                android:text="@string/Genre"
+                app:layout_constraintStart_toStartOf="@+id/char_name"
+                app:layout_constraintTop_toBottomOf="@+id/char_name" />
+
+            <TextView
+                android:id="@+id/char_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kanit"
+                android:text="@string/Duration"
+                app:layout_constraintStart_toStartOf="@+id/char_genre"
+                app:layout_constraintTop_toBottomOf="@+id/char_genre" />
+
+            <Button
+                android:id="@+id/btn_share"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="32dp"
+                android:text="Share"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.47"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sutradara" />
+
+            <TextView
+                android:id="@+id/sutradara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kanit"
+                android:text="@string/Sutradara"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/char_duration"
+                app:layout_constraintTop_toBottomOf="@+id/char_duration" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
